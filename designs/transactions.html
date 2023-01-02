@@ -34,159 +34,150 @@
     <main class="main">
         <header>
             <div>
-                <div>Argent Bank Checking (x8349)</div>
-                <div>$2,082.79</div>
-                <div>Available Balance</div>
+                <div id="header-title">Argent Bank Checking (x8349)</div>
+                <div id="header-balance">$2,082.79</div>
+                <div id="header-legend">Available Balance</div>
             </div>
         </header>
         <section>
             <div class="container">
+              <div class="container-line" id="container-header">
+                <div class="container-arrow"></div>
+                <div class="container-date">DATE</div>
+                <div class="container-description">DESCRIPTION</div>
+                <div class="container-amount">AMOUNT</div>
+                <div class="container-balance">BALANCE</div>
+            </div>
               <div class="container-row">
                 <div class="container-line">
-                  <div class="container-arrow"> du </div>
+                  <div class="container-arrow">
+                    <div class="visible arrow-down"><img src="./img/arrowDown.svg" alt="flèche descendante"></div>
+                    <div class="hidden arrow-up"><img src="./img/arrowUp.svg" alt="flèche descendante"></div>
+                  </div>
                   <div class="container-date">June 20th, 2020</div>
                   <div class="container-description">Golden Sun Bakery</div>
                   <div class="container-amount">$5.00</div>
                   <div class="container-balance">$2082.79</div>
                 </div>
-                <div class="container-details">
-                  <div class="container-details-type">Transaction Type : Electronic</div>
-                  <div class="container-details-category">
+                <div class="container-details hidden">
+                  <div class="container-line container-details-type">Transaction Type : Electronic</div>
+                  <div class="container-line container-details-category">
                     <div class="category-text">Category :</div>
-                    <select class="category-selector">Icon</select>
+                    <div class="hidden">
+                      <img src="./img/pencil.svg" alt="crayon">
+                    </div>
+                    <div class="visible">
+                      <select class="category-selector">
+                        <option value="">--Please choose an option--</option>
+                        <option value="electronic">Electronic</option>
+                        <option value="food">Food</option>
+                        <option value="money">Money</option>
+                        <option value="fuel">Fuel</option>
+                        <option value="groceries">Groceries</option>
+                        <option value="clothes">Clothes</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="container-details-notes">
+                  <div class="container-line container-details-notes">                    
                     <label for="notes">
                       <div class="notes-text">Notes : </div>
                     </label>
-                    <div>Icon</div>
-                    <input type="text" id="notes"  class="notes-input">
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="container-row">
-                <div class="container-line">
-                  <div class="container-arrow"> du </div>
-                  <div class="container-date">June 20th, 2020</div>
-                  <div class="container-description">Golden Sun Bakery</div>
-                  <div class="container-amount">$5.00</div>
-                  <div class="container-balance">$2082.79</div>
-                </div>
-                <div class="container-details">
-                  <div class="container-details-type">Transaction Type : Electronic</div>
-                  <div class="container-details-category">
-                    <div class="category-text">Category :</div>
-                    <select class="category-selector">Icon</select>
-                  </div>
-                  <div class="container-details-notes">
-                    <label for="notes">
-                      <div class="notes-text">Notes : </div>
-                    </label>
-                    <div>Icon</div>
-                    <input type="text" id="notes"  class="notes-input">
-                  </div>
-                </div>
-              </div> -->
-              <!-- <div class="container-row">
-                <div class="container-line">
-                  <div class="container-arrow"> du </div>
-                  <div class="container-date">June 20th, 2020</div>
-                  <div class="container-description">Golden Sun Bakery</div>
-                  <div class="container-amount">$5.00</div>
-                  <div class="container-balance">$2082.79</div>
-                </div>
-                <div class="container-details">
-                  <div class="container-details-type">Transaction Type : Electronic</div>
-                  <div class="container-details-category">
-                    <div class="category-text">Category :</div>
-                    <select class="category-selector">Icon</select>
-                  </div>
-                  <div class="container-details-notes">
-                    <label for="notes">
-                      <div class="notes-text">Notes : </div>
-                    </label>
-                    <div>Icon</div>
-                    <input type="text" id="notes"  class="notes-input">
+                    <div class="hidden">
+                      <img src="./img/pencil.svg" alt="crayon">
+                    </div>
+                    <div class="visible">
+                      <input type="text" id="notes"  class="notes-input">
+                    </div>                
                   </div>
                 </div>
               </div>
               <div class="container-row">
                 <div class="container-line">
-                  <div class="container-arrow"> du </div>
+                  <div class="container-arrow">
+                    <div class="visible arrow-down"><img src="./img/arrowDown.svg" alt="flèche descendante"></div>
+                    <div class="hidden arrow-up"><img src="./img/arrowUp.svg" alt="flèche descendante"></div>
+                  </div>
                   <div class="container-date">June 20th, 2020</div>
                   <div class="container-description">Golden Sun Bakery</div>
                   <div class="container-amount">$5.00</div>
                   <div class="container-balance">$2082.79</div>
                 </div>
                 <div class="container-details">
-                  <div class="container-details-type">Transaction Type : Electronic</div>
-                  <div class="container-details-category">
+                  <div class="container-line container-details-type">Transaction Type : Electronic</div>
+                  <div class="container-line container-details-category">
                     <div class="category-text">Category :</div>
-                    <select class="category-selector">Icon</select>
+                    <div class="hidden">
+                      <img src="./img/pencil.svg" alt="crayon">
+                    </div>
+                    <div class="visible">
+                      <select class="category-selector">
+                        <option value="">--Please choose an option--</option>
+                        <option value="electronic">Electronic</option>
+                        <option value="food">Food</option>
+                        <option value="money">Money</option>
+                        <option value="fuel">Fuel</option>
+                        <option value="groceries">Groceries</option>
+                        <option value="clothes">Clothes</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="container-details-notes">
+                  <div class="container-line container-details-notes">                    
                     <label for="notes">
                       <div class="notes-text">Notes : </div>
                     </label>
-                    <div>Icon</div>
-                    <input type="text" id="notes"  class="notes-input">
+                    <div class="hidden">
+                      <img src="./img/pencil.svg" alt="crayon">
+                    </div>
+                    <div class="visible">
+                      <input type="text" id="notes"  class="notes-input">
+                    </div>                
                   </div>
                 </div>
               </div>
               <div class="container-row">
                 <div class="container-line">
-                  <div class="container-arrow"> du </div>
+                  <div class="container-arrow">
+                    <div class="visible arrow-down"><img src="./img/arrowDown.svg" alt="flèche descendante"></div>
+                    <div class="hidden arrow-up"><img src="./img/arrowUp.svg" alt="flèche descendante"></div>
+                  </div>
                   <div class="container-date">June 20th, 2020</div>
                   <div class="container-description">Golden Sun Bakery</div>
                   <div class="container-amount">$5.00</div>
                   <div class="container-balance">$2082.79</div>
                 </div>
-                <div class="container-details">
-                  <div class="container-details-type">Transaction Type : Electronic</div>
-                  <div class="container-details-category">
+                <div class="container-details hidden">
+                  <div class="container-line container-details-type">Transaction Type : Electronic</div>
+                  <div class="container-line container-details-category">
                     <div class="category-text">Category :</div>
-                    <select class="category-selector">Icon</select>
+                    <div class="hidden">
+                      <img src="./img/pencil.svg" alt="crayon">
+                    </div>
+                    <div class="visible">
+                      <select class="category-selector">
+                        <option value="">--Please choose an option--</option>
+                        <option value="electronic">Electronic</option>
+                        <option value="food">Food</option>
+                        <option value="money">Money</option>
+                        <option value="fuel">Fuel</option>
+                        <option value="groceries">Groceries</option>
+                        <option value="clothes">Clothes</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="container-details-notes">
+                  <div class="container-line container-details-notes">                    
                     <label for="notes">
                       <div class="notes-text">Notes : </div>
                     </label>
-                    <div>Icon</div>
-                    <input type="text" id="notes"  class="notes-input">
+                    <div class="hidden">
+                      <img src="./img/pencil.svg" alt="crayon">
+                    </div>
+                    <div class="visible">
+                      <input type="text" id="notes"  class="notes-input">
+                    </div>                
                   </div>
                 </div>
               </div>
-              <div class="container-row">
-                <div class="container-line">
-                  <div class="container-arrow"> du </div>
-                  <div class="container-date">June 20th, 2020</div>
-                  <div class="container-description">Golden Sun Bakery</div>
-                  <div class="container-amount">$5.00</div>
-                  <div class="container-balance">$2082.79</div>
-                </div>
-                <div class="container-details">
-                  <div class="container-details-type">Transaction Type : Electronic</div>
-                  <div class="container-details-category">
-                    <div class="category-text">Category :</div>
-                    <select class="category-selector">Icon</select>
-                  </div>
-                  <div class="container-details-notes">
-                    <label for="notes">
-                      <div class="notes-text">Notes : </div>
-                    </label>
-                    <div>Icon</div>
-                    <input type="text" id="notes"  class="notes-input">
-                  </div>
-                </div>
-              </div> -->
-                    
-                <div class="container-line">
-                    <div class="container-arrow">dude</div>
-                    <div class="container-date">June 20th, 2020</div>
-                    <div class="container-description">Golden Sun Bakery</div>
-                    <div class="container-amount">$10.00</div>
-                    <div class="container-balance">$2087.79</div>
-                </div>
+             
             </div>
 
         </section>
@@ -194,6 +185,9 @@
     <footer class="footer">
         <p class="footer-text">Copyright 2020 Argent Bank</p>
     </footer>
+
+    <script src="./scripts/transactions.js"
   </body>
+
 
 </html>

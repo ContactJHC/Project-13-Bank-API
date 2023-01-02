@@ -35,37 +35,103 @@ body {
   white-space: nowrap !important; /* 3 */
 }
 
-.container-line {
-  display: flex;
+header {
+  font-weight: bold;
+  padding: 2em 0;
+  border: 2px solid #98a3b0;
+}
+
+#header-title {
+  font-size: 0.9em;
+}
+
+#header-legend {
+  font-size: 0.8em ;
+}
+
+#header-balance {
+  font-size: 2em;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+section {
+  background-color: #dde2ea;
+}
+
+.container {
+  padding-top: 5em;
+  padding-bottom: 5em;
   width: 90%;
   margin: auto;
   text-align: start;
   line-height: 3em;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+#container-header.container-line {
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+
+.container-row{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #98a3b0;
+  background-color: white;
+}
+
+.container-line {
+  display: flex;
+  width: 100%;
+}
+
+.container-details {
+  padding-left: 5%;
 }
 
 .container-arrow {
   width: 5%;
-  background-color: rgba(136, 0, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-arrow div {
+  height: 60%;
+}
+
+.container-details-notes .visible, .container-details-category .visible {
+  padding-left: 1em;
+}
+
+.container-arrow div img {
+  height: 100%;
+  fill: black;
+  stroke: black;
 }
 
 .container-date {
   width: 20%;
-  background-color: rgba(110, 8, 8, 0.5);
 }
 
 .container-description {
   width: 30%;
-  background-color: rgba(90, 195, 60, 0.5);
 }
 
 .container-amount {
   width: 25%;
-  background-color: rgba(120, 155, 90, 0.5);
 }
 
 .container-balance {
   width: 20%;
-  background-color: rgba(180, 55, 180, 0.5);
 }
 
 .main-nav {
@@ -240,6 +306,8 @@ body {
   justify-content: center;
   border-top: 2px solid #ccc;
   padding: 2rem 0 1.5rem;
+  font-weight: bold;
+  font-size: 0.8em;
 }
 
 .footer-text {
