@@ -35,6 +35,39 @@ body {
   white-space: nowrap !important; /* 3 */
 }
 
+.container-line {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  text-align: start;
+  line-height: 3em;
+}
+
+.container-arrow {
+  width: 5%;
+  background-color: rgba(136, 0, 255, 0.5);
+}
+
+.container-date {
+  width: 20%;
+  background-color: rgba(110, 8, 8, 0.5);
+}
+
+.container-description {
+  width: 30%;
+  background-color: rgba(90, 195, 60, 0.5);
+}
+
+.container-amount {
+  width: 25%;
+  background-color: rgba(120, 155, 90, 0.5);
+}
+
+.container-balance {
+  width: 20%;
+  background-color: rgba(180, 55, 180, 0.5);
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
